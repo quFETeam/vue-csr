@@ -4,6 +4,7 @@ module.exports = {
   env: {
     browser: true, // browser global variables
     es2021: true, // adds all ECMAScript 2021.
+    jest: true,
     'vue/setup-compiler-macros': true,
   },
   parserOptions: {
@@ -38,5 +39,6 @@ module.exports = {
       svg: 'always',
       math: 'always',
     }],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true, optionalDependencies: false, peerDependencies: false }],
   },
 };
