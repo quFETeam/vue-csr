@@ -1,13 +1,13 @@
 // Invoked on the commit-msg git hook by yorkie.
-
-// eslint-disable-next-line import/no-unresolved
 const chalk = require('chalk');
 
 const msgPath = process.env.GIT_PARAMS;
+console.log(process.env);
 const msg = require('fs')
   .readFileSync(msgPath, 'utf-8')
   .trim();
 
+console.log(msg);
 const commitRE = /^(revert: )?(feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release)(\(.+\))?: .{1,50}/;
 
 if (!commitRE.test(msg)) {
