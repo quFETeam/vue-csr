@@ -20,4 +20,19 @@ it('content', async () => {
   await button.trigger('click');
 
   expect(wrapper.findComponent(Hello).text()).toContain('count is: 2');
+  const Comp1 = {
+    template: '<div><Hello/></div>',
+  };
+  const wrapper1 = mount(Comp1, {
+    global: {
+      components: {
+        Hello,
+      },
+    },
+  });
+  const button1 = await wrapper1.get('[type="button"]');
+  await button1.trigger('click');
+  await button1.trigger('click');
+
+  expect(wrapper1.findComponent(Hello).text()).toContain('count is: 3');
 });
