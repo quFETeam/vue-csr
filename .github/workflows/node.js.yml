@@ -34,5 +34,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
     - run: npm run coverall 
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
 
