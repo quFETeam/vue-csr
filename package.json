@@ -7,7 +7,8 @@
     "preview": "vite preview",
     "jest": "jest src --watch",
     "test": "jest",
-    "coverall": "cat coverage/lcov.info | coveralls"
+    "coverall": "cat coverage/lcov.info | coveralls",
+    "fix":"eslint --fix"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
