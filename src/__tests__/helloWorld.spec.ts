@@ -19,5 +19,5 @@ it('content', async () => {
   await button.trigger('click');
   await button.trigger('click');
 
-  expect(wrapper.findComponent(Hello).text()).toContain('count is: 2');
+  expect(wrapper.findComponent(Hello).text()).toContain('count is: 3');
 });
