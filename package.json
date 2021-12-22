@@ -6,7 +6,7 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "jest": "jest src --watch",
-    "test": "jest && npm run coverall",
+    "test": "jest",
     "coverall": "cat coverage/lcov.info | coveralls"
   },
   "dependencies": {
