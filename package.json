@@ -5,7 +5,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "jest": "jest src --watch"
+    "jest": "jest src --watch",
+    "test": "jest && npm run coverall",
+    "coverall": "cat coverage/lcov.info | coveralls"
   },
   "dependencies": {
     "vue": "^3.2.25"
@@ -19,6 +21,7 @@
     "@vue/babel-preset-app": "^4.5.15",
     "@vue/test-utils": "^2.0.0-rc.17",
     "babel-jest": "^26.3.0",
+    "coveralls": "^3.1.1",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
