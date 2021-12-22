@@ -39,6 +39,7 @@ module.exports = {
       svg: 'always',
       math: 'always',
     }],
+    '@typescript-eslint/no-var-requires': 0,
     'import/no-extraneous-dependencies': ['error', { devDependencies: true, optionalDependencies: false, peerDependencies: false }],
   },
 };

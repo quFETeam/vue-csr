@@ -9,6 +9,16 @@
     "test": "jest",
     "coverall": "cat coverage/lcov.info | coveralls"
   },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verify-commit-msg.js"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "dependencies": {
     "vue": "^3.2.25"
   },
@@ -21,6 +31,7 @@
     "@vue/babel-preset-app": "^4.5.15",
     "@vue/test-utils": "^2.0.0-rc.17",
     "babel-jest": "^26.3.0",
+    "chalk": "^5.0.0",
     "coveralls": "^3.1.1",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -28,6 +39,7 @@
     "eslint-plugin-vue": "^8.2.0",
     "jest-html-reporter": "^3.4.2",
     "jest-serializer-vue": "^2.0.2",
+    "lint-staged": "^12.1.3",
     "ts-jest": "^26.3.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.2",

@@ -7,6 +7,7 @@ const count = ref(0);
 if (!props.msg) {
   count.value = 1;
 }
+count.value = 1;
 </script>
 
 <template>
