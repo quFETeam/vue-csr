@@ -27,11 +27,11 @@ module.exports = {
   ],
   resetMocks: true,
   collectCoverage: true,
-  testResultsProcessor: './node_modules/jest-html-reporter',
-  reporters: [
-    'default',
-    ['./node_modules/jest-html-reporter', {
-      pageTitle: 'Test Report',
-    }],
-  ],
+//   testResultsProcessor: './node_modules/jest-html-reporter',
+//   reporters: [
+//     'default',
+//     ['./node_modules/jest-html-reporter', {
+//       pageTitle: 'Test Report',
+//     }],
+//   ],
 };
