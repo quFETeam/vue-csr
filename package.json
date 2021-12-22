@@ -14,7 +14,7 @@
     "commit-msg": "node scripts/verify-commit-msg.js"
   },
   "lint-staged": {
-    "*.js": [
+    "*.vue": [
       "eslint --fix",
       "git add"
     ]
